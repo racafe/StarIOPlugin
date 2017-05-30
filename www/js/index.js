@@ -34,14 +34,6 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		window.plugins.starPrinter.portDiscovery('All', function(error, printerList){
-		  if (error) {
-			console.error(error);
-		  } else {
-			console.log(printerList[0].name);
-			console.log(printerList[0].macAddress);
-		  }
-		});
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

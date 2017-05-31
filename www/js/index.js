@@ -45,7 +45,7 @@ var app = {
 			});
 			alert("salió");
 		}
-		/*
+
 		var success = function(message) {
         alert(message);
 		}
@@ -54,7 +54,7 @@ var app = {
 			alert("Error calling Hello Plugin");
 		}
 	
-		hello.greet("World", success, failure);*/
+		cordova.plugins.EpsonCordova.greet("World", success, failure);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

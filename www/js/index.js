@@ -38,12 +38,23 @@ var app = {
 
 		if (ip != null) {
 			alert("entró");
-			window.printReceipt("T88V",ip,function(a){
-				alert(JSON.stringify(a));
+			cordova.plugins.EpsonCordova.printReceipt("T88V",ip,function(a){
+				alert(a);
 			},function(b){
-				alert(JSON.stringify(b));
+				alert(b);
 			});
+			alert("salió");
 		}
+		/*
+		var success = function(message) {
+        alert(message);
+		}
+	
+		var failure = function() {
+			alert("Error calling Hello Plugin");
+		}
+	
+		hello.greet("World", success, failure);*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

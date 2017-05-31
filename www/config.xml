@@ -26,6 +26,12 @@
 	
 	<plugin spec="https://github.com/racafe/EpsonCordova.git" />
 	
+	<config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+		<array>
+			<string>com.epson.escpos</string>
+		</array>
+	</config-file>
+	
     <icon src="icon.png" />
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />

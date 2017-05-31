@@ -37,7 +37,8 @@ var app = {
 		var ip = prompt("Please enter the ip:", "");
 
 		if (ip != null) {
-			window.print("T88V",ip,function(a){
+			alert("entró");
+			window.printReceipt("T88V",ip,function(a){
 				alert(JSON.stringify(a));
 			},function(b){
 				alert(JSON.stringify(b));

@@ -34,6 +34,15 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		var ip = prompt("Please enter the ip:", "");
+
+		if (ip != null) {
+			window.print("T88V",ip,function(a){
+				alert(JSON.stringify(a));
+			},function(b){
+				alert(JSON.stringify(b));
+			});
+		}
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
